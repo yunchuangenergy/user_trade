@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云创数字能源有限公司</title>
+  <style>
+    body {
+      margin: 0; /* 去除页面边距 */
+      font-family: Arial, sans-serif;
+    }
+    header {
+      text-align: center; /* 使标题居中 */
+      padding: 20px;
+      background-color: #f4f4f4;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+    .dashboard-container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    .tableau-container {
+      width: 100%;
+      height: 500px; /* 默认设置高度 */
+      position: relative;
+    }
+    @media (max-width: 768px) {
+      .tableau-container {
+        height: 400px; /* 在小屏幕设备上调整高度 */
+      }
+    }
+    @media (max-width: 480px) {
+      .tableau-container {
+        height: 300px; /* 在超小屏幕设备上调整高度 */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>云创数字能源有限公司</h1>
+  </header>
+  
+  <div class="dashboard-container">
+    <div class="tableau-container" id="viz1750058990978">
+      <noscript>
+        <img alt="仪表板 2" src="https://public.tableau.com/static/images/_1/_17500354687650/2/1_rss.png" style="border: none" />
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="_17500354687650/2" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="no" /> <!-- 隐藏工具栏 -->
+        <param name="static_image" value="https://public.tableau.com/static/images/_1/_17500354687650/2/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="zh-CN" />
+        <param name="filter" value="publish=yes" />
+      </object>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var divElement = document.getElementById('viz1750058990978');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    
+    // 根据屏幕宽度自适应宽度和高度
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '800px';  // 在大屏幕设备上设置合适的高度
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '600px';  // 中等屏幕设备上的高度
+    } else {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '400px';  // 小屏幕设备上的高度
+    }
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>
